@@ -1,0 +1,111 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "scss/load-partial-extension": null,
+    "color-hex-length": null,
+    "selector-class-pattern": null,
+    "no-empty-source": null,
+    "order/properties-order": [
+      [
+        {
+          "groupName": "custom properties",
+          "emptyLineBefore": "never",
+          "properties": ["--*"]
+        },
+        {
+          "groupName": "positioning",
+          "emptyLineBefore": "never",
+          "properties": [
+            "position",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "z-index"
+          ]
+        },
+        {
+          "groupName": "box model",
+          "emptyLineBefore": "never",
+          "properties": [
+            "display",
+            "float",
+            "width",
+            "height",
+            "min-width",
+            "min-height",
+            "max-width",
+            "max-height",
+            "margin",
+            "margin-top",
+            "margin-right",
+            "margin-bottom",
+            "margin-left",
+            "padding",
+            "padding-top",
+            "padding-right",
+            "padding-bottom",
+            "padding-left",
+            "border",
+            "border-top",
+            "border-right",
+            "border-bottom",
+            "border-left",
+            "border-width",
+            "border-style",
+            "border-color",
+            "border-radius"
+          ]
+        },
+        {
+          "groupName": "typography",
+          "emptyLineBefore": "never",
+          "properties": [
+            "font",
+            "font-family",
+            "font-size",
+            "font-weight",
+            "font-style",
+            "line-height",
+            "text-align",
+            "text-decoration",
+            "text-transform",
+            "color"
+          ]
+        },
+        {
+          "groupName": "visual",
+          "emptyLineBefore": "never",
+          "properties": [
+            "background",
+            "background-color",
+            "background-image",
+            "background-position",
+            "background-repeat",
+            "background-size",
+            "box-shadow",
+            "opacity"
+          ]
+        },
+        {
+          "groupName": "misc",
+          "emptyLineBefore": "never",
+          "properties": [
+            "cursor",
+            "transition",
+            "transform",
+            "animation",
+            "overflow",
+            "overflow-x",
+            "overflow-y"
+          ]
+        }
+      ],
+      {
+        "unspecified": "bottom"
+      }
+    ]
+  },
+  "ignoreFiles": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
+}
