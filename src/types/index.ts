@@ -14,4 +14,7 @@ export type ApiResponse<T = unknown> = {
   message?: string;
 };
 
+// Export contact types
+export type { ContactBlock } from './contact';
+
 // Add more types as needed

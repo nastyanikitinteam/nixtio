@@ -6,6 +6,12 @@
   justify-content: center;
 }
 
+@mixin flex-end($align: center) {
+  display: flex;
+  align-items: $align;
+  justify-content: flex-end;
+}
+
 @mixin flex-between($align: center) {
   display: flex;
   align-items: $align;

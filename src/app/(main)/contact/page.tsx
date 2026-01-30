@@ -1,19 +1,9 @@
-import Hero from '@/components/hero/Hero';
+import ContactSection from './components/contactSection/ContactSection';
 
 export default function Contact() {
   return (
     <>
-      <Hero
-        title="Contact"
-        subtitle={
-          <>
-            Choose a time to discuss your project with us.
-            <br />
-            Know that we will hit the ground running the very next day!
-          </>
-        }
-        direction="column"
-      />
+      <ContactSection />
     </>
   );
 }

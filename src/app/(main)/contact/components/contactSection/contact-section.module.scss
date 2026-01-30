@@ -1,0 +1,97 @@
+@use '@styles/mixins.scss' as *;
+
+.blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.25rem;
+}
+
+.block {
+  padding: 2.5rem;
+  border-radius: 1.5625rem;
+  background: var(--color-white);
+
+  @include flex-column-gap(2.5rem);
+}
+
+.photo {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.info {
+  @include flex-column-gap(1.25rem);
+}
+
+.contact {
+  @include flex-between;
+
+  gap: 0.5rem;
+}
+
+.phone {
+  @include flex-start;
+
+  color: var(--color-black);
+  transition: color 0.2s;
+  gap: 0.5rem;
+
+  &:hover {
+    color: var(--color-text-secondary);
+  }
+}
+
+.flag {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  @include flex-center;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.socials {
+  @include flex-end;
+
+  gap: 1rem;
+}
+
+.social {
+  @include flex-center;
+
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.email {
+  @include flex-start;
+
+  gap: 0.5rem;
+
+  &-icon {
+    width: 1rem;
+    height: 1rem;
+    color: var(--color-text-secondary);
+    transition: color 0.2s;
+  }
+
+  &:hover {
+    .email-icon {
+      color: var(--color-text);
+    }
+  }
+}

@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-
 import cn from 'classnames';
 import styles from './hero.module.scss';
 
@@ -17,29 +16,25 @@ export default function Hero({
   tagline,
 }: HeroProps) {
   return (
-    <section className={styles.hero}>
-      <div className="wrapper">
-        <div className={cn(styles.content, styles[`content--${direction}`])}>
-          <div className={styles.title}>
-            <h1 className="h1">{title}</h1>
-          </div>
-          {subtitle || tagline ? (
-            <div className={styles.info}>
-              {tagline && <p className={styles.tagline}>{tagline}</p>}
-              {subtitle && (
-                <p
-                  className={cn(
-                    styles.subtitle,
-                    direction === 'column' && 'text--lg'
-                  )}
-                >
-                  {subtitle}
-                </p>
-              )}
-            </div>
-          ) : null}
-        </div>
+    <div className={cn(styles.content, styles[`content--${direction}`])}>
+      <div className={styles.title}>
+        <h1 className="h1">{title}</h1>
       </div>
-    </section>
+      {subtitle || tagline ? (
+        <div className={styles.info}>
+          {tagline && <p className={styles.tagline}>{tagline}</p>}
+          {subtitle && (
+            <p
+              className={cn(
+                styles.subtitle,
+                direction === 'column' && 'text--lg'
+              )}
+            >
+              {subtitle}
+            </p>
+          )}
+        </div>
+      ) : null}
+    </div>
   );
 }
