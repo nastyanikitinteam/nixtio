@@ -38,6 +38,12 @@ select {
   font-family: inherit;
 }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

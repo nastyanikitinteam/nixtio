@@ -1,0 +1,61 @@
+.backdrop {
+  position: fixed;
+  z-index: var(--z-index-modal-backdrop);
+  display: flex;
+  padding: var(--spacing-md);
+  background-color: rgb(0 0 0 / 50%);
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: relative;
+  z-index: var(--z-index-modal);
+  display: flex;
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+  background-color: var(--color-background);
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 10%),
+    0 10px 10px -5px rgb(0 0 0 / 4%);
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.closeButton {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  z-index: 1;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 4px;
+  font-size: var(--font-size-2xl);
+  line-height: 1;
+  color: var(--color-text-secondary);
+  background-color: transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: var(--color-text);
+    background-color: var(--color-background-secondary);
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+.content {
+  padding: var(--spacing-lg);
+  overflow-y: auto;
+  flex: 1;
+}

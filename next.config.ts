@@ -1,7 +1,7 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  reactStrictMode: false,
+  reactStrictMode: true,
 
   // Turbopack configuration for Next.js 16
   turbopack: {
@@ -11,6 +11,17 @@ const nextConfig: NextConfig = {
         as: '*.js',
       },
     },
+  },
+
+  // Webpack configuration for better HMR support
+  webpack: (config, { dev, isServer }) => {
+    if (dev && !isServer) {
+      config.watchOptions = {
+        poll: 1000,
+        aggregateTimeout: 300,
+      };
+    }
+    return config;
   },
 };
 

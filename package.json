@@ -13,6 +13,7 @@
     "lint:styles:check": "stylelint '**/*.{css,scss}'"
   },
   "dependencies": {
+    "classnames": "^2.5.1",
     "framer-motion": "^11.0.0",
     "next": "16.1.6",
     "react": "19.2.3",
@@ -20,6 +21,7 @@
     "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -29,7 +31,6 @@
     "eslint-config-next": "16.1.6",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
-    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "prettier": "^3.2.5",
     "sass": "^1.77.0",
     "stylelint": "^16.0.0",

@@ -1,4 +1,4 @@
-import { FormValues } from '@/types';
+import { FormValues } from '@/types/form';
 
 // Initial values for forms
 
