@@ -6,15 +6,30 @@
   justify-content: center;
 }
 
-@mixin flex-between {
+@mixin flex-between($align: center) {
   display: flex;
-  align-items: center;
+  align-items: $align;
   justify-content: space-between;
+}
+
+@mixin flex-start($align: center) {
+  display: flex;
+  align-items: $align;
+  justify-content: flex-start;
 }
 
 @mixin flex-column {
   display: flex;
   flex-direction: column;
+}
+
+@mixin flex-column-gap($gap: 0) {
+  display: flex;
+  flex-direction: column;
+
+  @if $gap != 0 {
+    gap: $gap;
+  }
 }
 
 @mixin truncate {

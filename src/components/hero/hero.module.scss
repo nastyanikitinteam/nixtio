@@ -1,0 +1,29 @@
+@use '@styles/mixins.scss' as *;
+
+.hero {
+  padding-top: 19.88rem;
+}
+
+.content {
+  &--row {
+    @include flex-start(flex-end);
+
+    gap: 2.75rem;
+
+    .info {
+      @include flex-column-gap(0.62rem);
+
+      width: 100%;
+      max-width: 22.812rem;
+      padding-bottom: 0.75rem;
+    }
+  }
+
+  &--column {
+    @include flex-column-gap(2.5rem);
+  }
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+}
