@@ -1,0 +1,16 @@
+.section {
+  padding-bottom: 10rem;
+}
+
+.blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem;
+}
+
+.block {
+  position: relative;
+  border-radius: 1.5625rem;
+  overflow: hidden;
+  aspect-ratio: 1.3888 / 1;
+}
