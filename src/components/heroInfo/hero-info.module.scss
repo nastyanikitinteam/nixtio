@@ -1,0 +1,47 @@
+@use '@styles/mixins.scss' as *;
+
+.content {
+  padding-top: 19.88rem;
+
+  &--row {
+    @include flex-start(flex-end);
+
+    gap: 2.75rem;
+
+    .info {
+      @include flex-column-gap(0.62rem);
+
+      width: 100%;
+      max-width: 22.812rem;
+      padding-bottom: 0.75rem;
+    }
+  }
+
+  &--column {
+    @include flex-column-gap(2.5rem);
+  }
+}
+
+.tagline {
+  color: var(--color-text);
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+}
+
+@media screen and (width <= 1024px) {
+  .content {
+    padding-top: 16.25rem;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .content {
+    padding: 6.25rem 0.625rem 0;
+
+    &--column {
+      gap: 1.25rem;
+    }
+  }
+}

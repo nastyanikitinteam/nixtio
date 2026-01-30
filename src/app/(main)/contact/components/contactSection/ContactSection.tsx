@@ -5,7 +5,7 @@ import CopyIcon from '@icons/copy.svg';
 import TelegramIcon from '@icons/telegram.svg';
 import WhatsAppIcon from '@icons/whatsapp.svg';
 import cn from 'classnames';
-import Hero from '@/components/hero/Hero';
+import HeroInfo from '@/components/heroInfo/HeroInfo';
 import { contactBlocks } from '@/config/contacts';
 import styles from './contact-section.module.scss';
 
@@ -18,7 +18,7 @@ export default function ContactSection() {
     <section className={styles.section}>
       <div className="wrapper">
         <div className="default-section --spacing-md">
-          <Hero
+          <HeroInfo
             title="Contact"
             subtitle={
               <>

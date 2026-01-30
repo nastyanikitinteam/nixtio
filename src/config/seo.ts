@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 
 const siteName = 'Nixtio';
 const siteUrl = 'https://nixtio.com'; // Замініть на ваш домен
-const defaultDescription = 'Nixtio Digital Agency - Creative solutions for your business';
+const defaultDescription =
+  'Nixtio Digital Agency - Creative solutions for your business';
 
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -38,20 +39,34 @@ export const defaultMetadata: Metadata = {
 };
 
 export const pagesMetadata: Record<string, Metadata> = {
+  projects: {
+    title: 'Projects',
+    description:
+      'Explore our projects and see how we have helped businesses grow.',
+    openGraph: {
+      title: 'Projects | Nixtio',
+      description:
+        'Explore our projects and see how we have helped businesses grow.',
+    },
+  },
   home: {
     title: 'Home',
-    description: 'Welcome to Nixtio Digital Agency. We create innovative digital solutions for your business.',
+    description:
+      'Welcome to Nixtio Digital Agency. We create innovative digital solutions for your business.',
     openGraph: {
       title: 'Home | Nixtio',
-      description: 'Welcome to Nixtio Digital Agency. We create innovative digital solutions for your business.',
+      description:
+        'Welcome to Nixtio Digital Agency. We create innovative digital solutions for your business.',
     },
   },
   contact: {
     title: 'Contact',
-    description: 'Get in touch with Nixtio Digital Agency. Contact our team for project estimates and inquiries.',
+    description:
+      'Get in touch with Nixtio Digital Agency. Contact our team for project estimates and inquiries.',
     openGraph: {
       title: 'Contact | Nixtio',
-      description: 'Get in touch with Nixtio Digital Agency. Contact our team for project estimates and inquiries.',
+      description:
+        'Get in touch with Nixtio Digital Agency. Contact our team for project estimates and inquiries.',
     },
   },
 };
