@@ -1,0 +1,68 @@
+@use '@styles/mixins.scss' as *;
+
+.cases {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem;
+}
+
+.case {
+  display: flex;
+  border-radius: 1.125rem;
+  text-decoration: none;
+  color: inherit;
+  background: white;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 1.3349;
+}
+
+.image {
+  transition: opacity 0.3s;
+  object-fit: cover;
+}
+
+.hoverImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  object-fit: cover;
+}
+
+.case:hover .image {
+  opacity: 0;
+}
+
+.case:hover .hoverImage {
+  opacity: 1;
+}
+
+.info {
+  height: 3.375rem;
+  padding: 1rem 1.5rem;
+  background: var(--color-white);
+
+  @include flex-start($align: flex-end);
+
+  gap: 0.63rem;
+}
+
+.year {
+  position: relative;
+  top: 0.0625rem;
+
+  &::before {
+    content: '/ ';
+  }
+}

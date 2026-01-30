@@ -17,4 +17,7 @@ export type ApiResponse<T = unknown> = {
 // Export contact types
 export type { ContactBlock } from './contact';
 
+// Export case types
+export type { Case } from './case';
+
 // Add more types as needed

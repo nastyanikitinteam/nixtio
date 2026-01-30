@@ -1,7 +1,7 @@
 @use '@/styles/mixins.scss' as *;
 
 .section {
-  padding: 10rem 0;
+  padding: var(--padding-lg) 0;
 }
 
 .content {
@@ -46,10 +46,4 @@
   width: 3.125rem;
   height: 3.125rem;
   border-radius: 50%;
-}
-
-@media screen and (width <= 480px) {
-  .section {
-    padding: 3.125rem 0;
-  }
 }

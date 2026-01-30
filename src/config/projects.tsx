@@ -1,0 +1,86 @@
+import LingValienImage1 from '@images/projects/lingvalien-1.webp';
+import LingValienImage2 from '@images/projects/lingvalien-2.webp';
+import type { Case } from '@/types/case';
+
+export const cases: Case[] = [
+  {
+    id: '1',
+    title: 'Payoneer',
+    year: '2025',
+    imageUrl: LingValienImage1,
+    hoverImageUrl: LingValienImage2,
+    link: '/projects/payoneer',
+  },
+  {
+    id: '2',
+    title: 'KazaSwap',
+    year: '2024',
+    imageUrl: LingValienImage1,
+    hoverImageUrl: LingValienImage2,
+    link: '/projects/kazaswap',
+  },
+  {
+    id: '3',
+    title: 'Passion Finder',
+    year: '2023',
+    imageUrl: LingValienImage1,
+    hoverImageUrl: LingValienImage2,
+    link: '/projects/passion-finder',
+  },
+  {
+    id: '4',
+    title: 'LinkMatch',
+    year: '2023-2024',
+    imageUrl: LingValienImage1,
+    hoverImageUrl: LingValienImage2,
+    link: '/projects/linkmatch',
+  },
+  {
+    id: '5',
+    title: 'Xefag',
+    year: '2023',
+    imageUrl: LingValienImage1,
+    hoverImageUrl: LingValienImage2,
+    link: '/projects/xefag',
+  },
+  {
+    id: '6',
+    title: 'Vetsie',
+    year: '2022',
+    imageUrl: LingValienImage1,
+    hoverImageUrl: LingValienImage2,
+    link: '/projects/vetsie',
+  },
+  {
+    id: '7',
+    title: 'Crextio',
+    year: '2025',
+    imageUrl: LingValienImage1,
+    hoverImageUrl: LingValienImage2,
+    link: '/projects/project-7',
+  },
+  {
+    id: '8',
+    title: 'Crestify',
+    year: '2025',
+    imageUrl: LingValienImage1,
+    hoverImageUrl: LingValienImage2,
+    link: '/projects/project-8',
+  },
+  {
+    id: '9',
+    title: 'Synthesia',
+    year: '2025',
+    imageUrl: LingValienImage1,
+    hoverImageUrl: LingValienImage2,
+    link: '/projects/project-9',
+  },
+  {
+    id: '10',
+    title: 'LingvAlien',
+    year: '2019',
+    imageUrl: LingValienImage1,
+    hoverImageUrl: LingValienImage2,
+    link: '/projects/project-10',
+  },
+];

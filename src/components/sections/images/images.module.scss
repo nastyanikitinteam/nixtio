@@ -1,5 +1,5 @@
 .section {
-  padding-bottom: 10rem;
+  padding-bottom: var(--padding-lg);
 }
 
 .blocks {
@@ -16,10 +16,6 @@
 }
 
 @media screen and (width <=480px) {
-  .section {
-    padding-bottom: 3.125rem;
-  }
-
   .blocks {
     grid-template-columns: 1fr;
     gap: 0.625rem;

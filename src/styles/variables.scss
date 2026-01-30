@@ -15,6 +15,10 @@
   --spacing-xl: 2rem;
   --spacing-2xl: 3rem;
 
+  // Section Paddings
+  --padding-md: 7.5rem;
+  --padding-lg: 10rem;
+
   // Typography
   --font-family: var(--font-inter), sans-serif;
   --font-size-xs: 0.75rem;
@@ -38,6 +42,13 @@
   --z-index-modal: 1050;
   --z-index-popover: 1060;
   --z-index-tooltip: 1070;
+}
+
+@media (width <= 1024px) {
+  :root {
+    --padding-md: 5rem;
+    --padding-lg: 3.125rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
