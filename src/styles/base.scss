@@ -210,6 +210,77 @@ select {
   }
 }
 
+@media screen and (width <= 1024px) {
+  .h1 {
+    font-size: 7.375rem;
+    line-height: 96%;
+    letter-spacing: -0.589rem;
+  }
+
+  .h3 {
+    font-size: 1.5rem;
+    line-height: 125%;
+    letter-spacing: -0.0564rem;
+
+    &--secondary {
+      font-size: 1.5rem;
+      line-height: 125%;
+      letter-spacing: -0.08rem;
+    }
+  }
+
+  .text {
+    &--lg {
+      font-size: 1.0625rem;
+      line-height: 130%;
+      letter-spacing: -0.057rem;
+    }
+  }
+}
+
+@media screen and (width <= 480px) {
+  .wrapper {
+    padding: 0 0.625rem;
+  }
+
+  .h1 {
+    font-size: 3rem;
+    line-height: 96%;
+    letter-spacing: -0.18rem;
+  }
+
+  .text {
+    &--lg {
+      font-size: 0.9375rem;
+      letter-spacing: -0.038rem;
+    }
+  }
+
+  .default-section {
+    // &.--spacing-sm {
+    //   gap: 4.28rem;
+    // }
+
+    &.--spacing-md {
+      gap: 3.125rem;
+    }
+
+    // &.--spacing-lg {
+    //   gap: 6.25rem;
+    // }
+
+    // &.--spacing-xl {
+    //   gap: 7.5rem;
+    // }
+  }
+
+  .default-columns {
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

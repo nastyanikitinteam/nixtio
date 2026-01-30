@@ -37,13 +37,16 @@ export default function ContactSection() {
                   <Image src={block.photo} alt={block.name} fill />
                 </div>
                 <div className={styles.info}>
-                  <h3 className="h3--secondary">{block.title}</h3>
+                  <h3
+                    className="h3--secondary"
+                    dangerouslySetInnerHTML={{ __html: block.title }}
+                  />
                   <div className={styles.contact}>
                     <a href={`tel:${block.phone}`} className={styles.phone}>
                       {block.countryFlag && (
                         <span className={styles.flag}>{block.countryFlag}</span>
                       )}
-                      <span className="text--sm ">{block.phone}</span>
+                      <p className="text--sm">{block.phone}</p>
                     </a>
                     <div className={styles.socials}>
                       {block.socialMedia.whatsapp && (
@@ -76,9 +79,9 @@ export default function ContactSection() {
                   className={styles.email}
                   aria-label="Copy email"
                 >
-                  <span className={(styles['email-text'], 'text--sm')}>
+                  <p className={cn(styles['email-text'], 'text--sm')}>
                     {block.email}
-                  </span>
+                  </p>
                   <span className={cn(styles['email-icon'], 'icon')}>
                     <CopyIcon />
                   </span>

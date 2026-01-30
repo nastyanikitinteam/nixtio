@@ -25,3 +25,19 @@
 .subtitle {
   color: var(--color-text-secondary);
 }
+
+@media screen and (width <= 1024px) {
+  .content {
+    padding-top: 16.25rem;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .content {
+    padding: 6.25rem 0.625rem 0;
+
+    &--column {
+      gap: 1.25rem;
+    }
+  }
+}

@@ -14,3 +14,14 @@
   overflow: hidden;
   aspect-ratio: 1.3888 / 1;
 }
+
+@media screen and (width <=480px) {
+  .section {
+    padding-bottom: 3.125rem;
+  }
+
+  .blocks {
+    grid-template-columns: 1fr;
+    gap: 0.625rem;
+  }
+}

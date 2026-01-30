@@ -95,3 +95,24 @@
     }
   }
 }
+
+@media screen and (width <= 480px) {
+  .blocks {
+    grid-template-columns: 1fr;
+  }
+
+  .block {
+    gap: 2rem;
+  }
+
+  .email {
+    &-text {
+      font-size: 1.125rem;
+    }
+  }
+
+  .social {
+    width: 2rem;
+    height: 2rem;
+  }
+}

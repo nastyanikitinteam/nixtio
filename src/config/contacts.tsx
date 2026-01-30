@@ -20,7 +20,7 @@ export const contactBlocks: ContactBlock[] = [
   {
     name: 'Arsen',
     photo: ArsenPhoto,
-    title: 'For a project estimate contact Arsen',
+    title: 'For a project estimate <br /> contact Arsen',
     phone: '+48577612187',
     countryFlag: <PolandFlag />,
     socialMedia: {
@@ -32,7 +32,7 @@ export const contactBlocks: ContactBlock[] = [
   {
     name: 'Michael',
     photo: MichaelPhoto,
-    title: 'For a project estimate contact Michael',
+    title: 'For a project estimate <br /> contact Michael',
     phone: '+41795943541',
     countryFlag: <SwitzerlandFlag />,
     socialMedia: {
@@ -44,7 +44,7 @@ export const contactBlocks: ContactBlock[] = [
   {
     name: 'Bogdan',
     photo: BogdanPhoto,
-    title: 'For any inquiries contact Bogdan',
+    title: 'For any inquiries <br /> contact Bogdan',
     phone: '+34600348548',
     countryFlag: <SpainFlag />,
     socialMedia: {
