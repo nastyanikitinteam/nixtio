@@ -1,7 +1,11 @@
+import type { Metadata } from 'next';
 import Button from '@/components/button/Button';
 import Input from '@/components/input/Input';
 import Textarea from '@/components/textarea/Textarea';
+import { pagesMetadata } from '@/config/seo';
 import PageHeader from './components/header/Header';
+
+export const metadata: Metadata = pagesMetadata.home;
 
 export default function Home() {
   return (

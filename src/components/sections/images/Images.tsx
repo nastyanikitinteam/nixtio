@@ -20,13 +20,13 @@ export default function ImagesSection({
         <div className={styles.blocks}>
           {firstImage && (
             <div className={styles.block}>
-              <Image src={firstImage} alt={firstImageAlt} fill />
+              <Image src={firstImage} alt={firstImageAlt} fill unoptimized />
             </div>
           )}
 
           {secondImage && (
             <div className={styles.block}>
-              <Image src={secondImage} alt={secondImageAlt} fill />
+              <Image src={secondImage} alt={secondImageAlt} fill unoptimized />
             </div>
           )}
         </div>

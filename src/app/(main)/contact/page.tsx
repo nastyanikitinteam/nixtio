@@ -1,8 +1,12 @@
+import type { Metadata } from 'next';
 import ImagesSection from '@components/sections/images/Images';
 import Photo1 from '@images/contact/photo-1.jpg';
 import Photo2 from '@images/contact/photo-2.jpg';
+import { pagesMetadata } from '@/config/seo';
 import ContactSection from './components/contactSection/ContactSection';
 import SocialMedia from './components/socialMedia/SocialMedia';
+
+export const metadata: Metadata = pagesMetadata.contact;
 
 export default function Contact() {
   return (
